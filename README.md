@@ -8,9 +8,9 @@ This project is a **Technical Accelerator** consisting of a **reusable project t
 
 To work on this project, you will need:
 
--   [VS Code](https://code.visualstudio.com/)
--   [Docker](https://www.docker.com/)
--   The Remote - Containers extension for VS Code
+- [VS Code](https://code.visualstudio.com/)
+- [Docker](https://www.docker.com/)
+- The Remote - Containers extension for VS Code
 
 ## Launching the Devcontainer
 
@@ -23,6 +23,7 @@ To work on this project, you will need:
 ## Cline Configuration
 
 To contribute to this project using Cline, you will need to configure the technical stack and rules in the `.clinerules` folder.
+Update the `.clinerules/projectConfiguration.md` to match your project's requirements. Then ask Cline to update the `.clinerules/clineContributing.md`.
 
 ## Setting up the Project
 

@@ -73,5 +73,5 @@ These rules guide Cline's suggestions to ensure they align precisely with the es
 
 ## 14. Gitflow Workflow
 
-- **Rule 14.1 (Gitflow Adherence):** MUST adhere to the Gitflow workflow as described in `projectConfiguration.md`.
+- **Rule 14.1 (Gitflow Adherence):** MUST adhere to the Gitflow workflow and branch ruleset as described in `projectConfiguration.md`.
 - **Rule 14.2 (Pull Request CI):** MUST ensure that all pull requests to `main` pass the automated CI checks defined in `.github/workflows/ci.yml`.
