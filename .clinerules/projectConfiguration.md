@@ -73,6 +73,48 @@ my-workspace/
 - Cloud Run auto-deploys the app from the main branch.
 - Database and infrastructure changes (Pulumi) are reviewed by Cline before execution.
 
+### Gitflow
+
+The project follows a Gitflow-based branching model:
+
+1.  **Feature Development:**
+    - Create a feature branch from `main`.
+    - Develop the feature and commit changes.
+    - Open a Pull Request (PR) to merge the feature branch into `main`.
+    - The PR triggers automated checks (linting, formatting, tests, build) via GitHub Actions.
+    - Deploy to a development environment.
+2.  **Integration:**
+    - Once the PR is approved and checks pass, merge it into `main`.
+    - Merging into `main` triggers automatic deployment to a Test/QA environment.
+    - QA performs validation in the Test/QA environment.
+3.  **Production:**
+    - Manually trigger deployment to the Production environment from the `main` branch (or a dedicated release branch if implemented).
+    - After successful deployment, create a Git tag for the release.
+    - Automatically generate a changelog based on commit history.
+
+```mermaid
+graph TD
+    subgraph Development
+        A[Feature branch]
+        B[Pull Request to main]
+        C[Automated tests + lint + build with NX]
+        D[Deployment to Dev environment]
+    end
+    subgraph Integration
+        E[Merge into main]
+        F[Automatic deployment to Test/QA]
+        G[QA validation]
+    end
+    subgraph Production
+        H[Manual deployment to Prod]
+        I[Tag & automatic changelog]
+    end
+
+    A --> B --> C --> D
+    D --> E
+    E --> F --> G --> H --> I
+```
+
 ## Security
 
 DO NOT read or modify:

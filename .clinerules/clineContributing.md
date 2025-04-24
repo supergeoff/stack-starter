@@ -70,3 +70,8 @@ These rules guide Cline's suggestions to ensure they align precisely with the es
 
 - **Rule 13.1 (Existing Configuration):** Assume standard configurations exist based on the established stack.
 - **Rule 13.2 (Simplicity & Relevance):** Prioritize direct, relevant suggestions using the defined stack.
+
+## 14. Gitflow Workflow
+
+- **Rule 14.1 (Gitflow Adherence):** MUST adhere to the Gitflow workflow as described in `projectConfiguration.md`.
+- **Rule 14.2 (Pull Request CI):** MUST ensure that all pull requests to `main` pass the automated CI checks defined in `.github/workflows/ci.yml`.
