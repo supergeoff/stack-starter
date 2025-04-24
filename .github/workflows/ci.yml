@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@vlatest
+        uses: actions/checkout@latest
         with:
           filter: tree:0
           fetch-depth: 0
