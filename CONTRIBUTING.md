@@ -80,6 +80,11 @@ Nx provides a local MCP server. To configure it, add the following to your Cline
 }
 ```
 
+## Linting & Formatting
+
+- MUST adhere to the project's root `ESLint` and `Prettier` configurations. Suggestions should be compatible.
+- MUST assume linting and formatting are primarily triggered on save (via VS Code settings) or via pre-commit hooks (Husky + lint-staged), rather than manual terminal commands. Ensure your IDE is configured to automatically format code on save to adhere to the project's Prettier configuration.
+
 ## License
 
 By contributing to this project, you agree to license your contributions under the project's license.
