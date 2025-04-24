@@ -16,9 +16,9 @@ To contribute to the project, we recommend using the provided Devcontainer.
 
 ### Prerequisites
 
--   [VS Code](https://code.visualstudio.com/)
--   [Docker](https://www.docker.com/)
--   The Remote - Containers extension for VS Code
+- [VS Code](https://code.visualstudio.com/)
+- [Docker](https://www.docker.com/)
+- The Remote - Containers extension for VS Code
 
 ### Launching the Devcontainer
 
@@ -61,6 +61,24 @@ To contribute to this project using Cline, you will need to configure the follow
 1.  Deactivate the local `_memory-bank` rule. This ensures that you are only using the global memory bank.
 2.  Before starting work, ask Cline to read the memory bank to understand the project context.
 3.  After completing your work, ask Cline to update the memory bank to reflect your changes.
+
+### MCP Server Configuration
+
+This project utilizes MCP servers to provide additional tools and resources. To use MCP servers, ensure they are running and properly configured in your environment.
+
+Nx provides a local MCP server. To configure it, add the following to your Cline settings:
+
+```json
+{
+  "mcpServers": {
+    "nx-mcp": {
+      "url": "http://localhost:9772/sse",
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
+```
 
 ## License
 
