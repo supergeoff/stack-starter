@@ -10,6 +10,10 @@ We welcome contributions to the Technical Accelerator project! This document out
 4.  Test your changes thoroughly.
 5.  Submit a pull request.
 
+### Gitflow
+
+This project follows a Gitflow-inspired workflow: all new features are developed on branches created from `main`, with changes submitted via Pull Requests that trigger automated checks and deployment to a `Development` environment. Once a PR is approved and merged, the latest `main` is automatically deployed the `Test/QA` environments for further validation. To release to production, create and push a Git tag (e.g., vX.Y.Z) on `main`, which triggers automated deployment to `Production`, changelog generation, and the creation of a GitHub Release.
+
 ## Setting up the Project
 
 To contribute to the project, we recommend using the provided Devcontainer.
