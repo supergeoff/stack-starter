@@ -135,16 +135,12 @@ graph TD
 - **Enforcement:** Enabled
 - **Bypass List:** _None_ (No roles, teams, or apps are exempt from this ruleset)
 
----
-
 ### Target Branches
 
 - **Applies to:** `main`
 - **Branch Targeting:**
   - **Inclusion:** Default (`main`)
   - **Exclusion:** None
-
----
 
 ### Rules Overview
 
