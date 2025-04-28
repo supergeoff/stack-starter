@@ -70,7 +70,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'mainSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
         {
           href: 'https://github.com/supergeoff/stack-starter',
