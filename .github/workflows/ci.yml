@@ -45,17 +45,17 @@ jobs:
         uses: nrwl/nx-set-shas@v4
 
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
-      # - run: pnpm exec nx-cloud record -- echo Hello World
+      # - run: npx nx-cloud record -- echo Hello World
 
       # Nx Affected runs only tasks affected by the changes in this PR/commit. Learn more: https://nx.dev/ci/features/affected
       - name: Lint affected projects
-        run: pnpm exec nx affected -t lint
+        run: npx nx affected -t lint
 
       - name: Test affected projects
-        run: pnpm exec nx affected -t test
+        run: npx nx affected -t test
 
       - name: Build affected projects
-        run: pnpm exec nx affected -t build
+        run: pnpx nx affected -t build
 
       # Placeholder for Deploy step - uncomment and adjust when deployment is configured
       # - name: Deploy affected projects (if applicable)
