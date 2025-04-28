@@ -73,10 +73,6 @@ my-workspace/
 - Cloud Run auto-deploys the app from the main branch.
 - Database and infrastructure changes (Pulumi) are reviewed by Cline before execution.
 
-Absolutely! Here’s your **copy-pastable markdown** for the updated Gitflow, including a code block for the Mermaid diagram:
-
----
-
 ## Gitflow
 
 The project follows a Gitflow-based branching model:
@@ -116,7 +112,7 @@ graph TD
         G[QA validation]
     end
     subgraph Production
-        J[Create Git tag (vX.Y.Z)]
+        J[Create Git tag (vX Y Z)]
         H[Tag triggers auto deployment to Prod]
         I[Auto changelog & release notes]
     end
