@@ -49,13 +49,13 @@ jobs:
 
       # Nx Affected runs only tasks affected by the changes in this PR/commit. Learn more: https://nx.dev/ci/features/affected
       - name: Lint affected projects
-        run: npx nx affected -t lint
+        run: npx nx affected:lint
 
       - name: Test affected projects
-        run: npx nx affected -t test
+        run: npx nx affected:test
 
       - name: Build affected projects
-        run: pnpx nx affected -t build
+        run: pnpx nx affected:build
 
       # Placeholder for Deploy step - uncomment and adjust when deployment is configured
       # - name: Deploy affected projects (if applicable)
