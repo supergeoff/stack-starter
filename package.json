@@ -59,7 +59,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,json,md,html,css}": [
-      "npx nx affected --target=lint --uncommitted --fix=true",
+      "npx nx affected:lint --uncommitted --fix=true",
       "prettier --write"
     ]
   }
