@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'My Site',
   tagline: 'Main documentation site',
-  // favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://supergeoff.github.io',
@@ -61,10 +61,10 @@ const config: Config = {
   themeConfig: {
     navbar: {
       title: 'Stack Starter',
-      // logo: {
-      //   alt: 'My Site Logo',
-      //   src: 'img/logo.svg',
-      // },
+      logo: {
+        alt: 'Stack Starter Logo',
+        src: 'img/logo.png',
+      },
       items: [
         {
           type: 'docSidebar',

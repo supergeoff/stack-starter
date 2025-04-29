@@ -35,13 +35,17 @@ yarn-error.log
 testem.log
 /typings
 
-# System Files
+# System files
 .DS_Store
 Thumbs.db
 
+# Nx files
 .nx/cache
 .nx/workspace-data
 
 # Generated Docusaurus files
 .docusaurus/
 .cache-loader/
+
+# pnpm files
+.pnpm-store
