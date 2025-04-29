@@ -33,8 +33,7 @@
         "bradlc.vscode-tailwindcss", // Tailwind CSS support
         "graphql.vscode-graphql", // GraphQL support
         "pulumi.pulumi", // Pulumi extension for infrastructure-as-code
-        "-googlecloudtools.cloudcode", // Google Cloud (GCP) tools for VS Code
-        "-google.geminicodeassist", // Remove Gemini Code Assist extension
+        "-googlecloudtools.cloudcode", // Remove Google Cloud (GCP) tools for VS Code
         "ms-azuretools.vscode-docker", // Docker interface in VS Code
         "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
         "postman.postman-for-vscode", // Postman extension for API requests
@@ -43,7 +42,8 @@
         "dotenv.dotenv-vscode", // Environment variable manager
         "saoudrizwan.claude-dev", // Claude AI extension for AI assistance
         "github.vscode-github-actions", // Extension for GitHub Actions
-        "teabyii.ayu" // Ayu Light color theme
+        "fisheva.eva-theme", // Eva color theme
+        "helgardrichard.helium-icon-theme" // Helium icon theme
       ],
       // Default settings for VS Code in this environment
       "settings": {
@@ -52,9 +52,9 @@
         // Enables format on save
         "editor.formatOnSave": true,
         // Applies the Material Design icon theme
-        "workbench.iconTheme": "ayu",
+        "workbench.iconTheme": "helium-icon-theme",
         // Applies the Material Design color theme for the UI
-        "workbench.colorTheme": "Ayu Light Bordered"
+        "workbench.colorTheme": "Eva Light Italic Bold"
       }
     }
   },
