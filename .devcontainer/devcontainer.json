@@ -33,7 +33,7 @@
         "bradlc.vscode-tailwindcss", // Tailwind CSS support
         "graphql.vscode-graphql", // GraphQL support
         "pulumi.pulumi", // Pulumi extension for infrastructure-as-code
-        "googlecloudtools.cloudcode", // Google Cloud (GCP) tools for VS Code
+        "-googlecloudtools.cloudcode", // Google Cloud (GCP) tools for VS Code
         "-google.geminicodeassist", // Remove Gemini Code Assist extension
         "ms-azuretools.vscode-docker", // Docker interface in VS Code
         "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
