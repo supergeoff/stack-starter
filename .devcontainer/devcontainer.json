@@ -1,6 +1,6 @@
 // Name of the development environment (displayed in VS Code and Codespaces)
 {
-  "name": "Monorepo Stack (Nx + Node 22 + TypeScript + GCP + Pulumi)",
+  "name": "Monorepo Stack (Nx + Node + TypeScript + GCP + Pulumi)",
 
   // Base Docker image used for the development environment
   "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
