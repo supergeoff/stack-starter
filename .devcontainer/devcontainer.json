@@ -42,7 +42,8 @@
         "dotenv.dotenv-vscode", // Environment variable manager
         "saoudrizwan.claude-dev", // Claude AI extension for AI assistance
         "github.vscode-github-actions", // Extension for GitHub Actions
-        "fisheva.eva-theme", // Eva color theme
+        "alexanderbast.vscode-snazzy", // Snazzy color theme
+        "loilo.snazzy-light", // Snazzy Light color theme
         "helgardrichard.helium-icon-theme" // Helium icon theme
       ],
       // Default settings for VS Code in this environment
@@ -54,7 +55,7 @@
         // Applies the Material Design icon theme
         "workbench.iconTheme": "helium-icon-theme",
         // Applies the Material Design color theme for the UI
-        "workbench.colorTheme": "Eva Light Italic Bold"
+        "workbench.colorTheme": "Snazzy Light"
       }
     }
   },
