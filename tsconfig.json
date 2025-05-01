@@ -4,13 +4,13 @@
   "files": [],
   "references": [
     {
+      "path": "./apps/docs"
+    },
+    {
       "path": "./apps/health-e2e"
     },
     {
       "path": "./apps/health"
-    },
-    {
-      "path": "./apps/docs"
     }
   ]
 }
