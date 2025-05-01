@@ -49,3 +49,6 @@ Thumbs.db
 
 # pnpm files
 .pnpm-store
+
+# test files
+test-output

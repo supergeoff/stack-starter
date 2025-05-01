@@ -8,6 +8,9 @@
     },
     {
       "path": "./apps/health"
+    },
+    {
+      "path": "./apps/docs"
     }
   ]
 }

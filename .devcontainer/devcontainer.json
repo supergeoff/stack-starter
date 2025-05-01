@@ -42,6 +42,7 @@
         "dotenv.dotenv-vscode", // Environment variable manager
         "saoudrizwan.claude-dev", // Claude AI extension for AI assistance
         "github.vscode-github-actions", // Extension for GitHub Actions
+        "firsttris.vscode-jest-runner", // Jest test runner for VS Code
         "alexanderbast.vscode-snazzy", // Snazzy color theme
         "loilo.snazzy-light", // Snazzy Light color theme
         "helgardrichard.helium-icon-theme" // Helium icon theme

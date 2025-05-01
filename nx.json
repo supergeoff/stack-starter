@@ -52,5 +52,10 @@
         "targetName": "lint"
       }
     }
-  ]
+  ],
+  "targetDefaults": {
+    "test": {
+      "dependsOn": ["^build"]
+    }
+  }
 }
