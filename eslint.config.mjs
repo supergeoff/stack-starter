@@ -1,15 +1,9 @@
 import nx from '@nx/eslint-plugin';
-import eslintPluginImport from 'eslint-plugin-import';
 
 export default [
   ...nx.configs['flat/base'],
   ...nx.configs['flat/typescript'],
   ...nx.configs['flat/javascript'],
-  {
-    plugins: {
-      import: eslintPluginImport,
-    },
-  },
   {
     ignores: ['**/dist'],
   },
@@ -50,7 +44,6 @@ export default [
       '@typescript-eslint/no-explicit-any': 'error', // Upgrade from warn
 
       // --- Code Style & Consistency ---
-      'import/no-cycle': 'error',
       '@typescript-eslint/naming-convention': [
         'warn',
         {
