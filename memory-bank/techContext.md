@@ -18,3 +18,9 @@ Dependencies are managed using pnpm and are defined in the package.json file.
 
 Tool usage patterns include using Nx commands for common development tasks,
 Pulumi for managing infrastructure, and GitHub Actions for CI/CD.
+
+Known Issues:
+
+- Nx bug with `@nx/js:node` executor preventing file watching for automatic
+  reloads in the 'health' application. Workaround is to use the
+  `webpack:webpack` executor for the serve target in `apps/health/package.json`.

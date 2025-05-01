@@ -43,6 +43,7 @@
         "saoudrizwan.claude-dev", // Claude AI extension for AI assistance
         "github.vscode-github-actions", // Extension for GitHub Actions
         "firsttris.vscode-jest-runner", // Jest test runner for VS Code
+        "ms-playwright.playwright", // Playwright for end-to-end testing
         "alexanderbast.vscode-snazzy", // Snazzy color theme
         "loilo.snazzy-light", // Snazzy Light color theme
         "helgardrichard.helium-icon-theme" // Helium icon theme
