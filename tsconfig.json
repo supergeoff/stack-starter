@@ -11,6 +11,12 @@
     },
     {
       "path": "./apps/health"
+    },
+    {
+      "path": "./apps/healthcheck-e2e"
+    },
+    {
+      "path": "./apps/healthcheck"
     }
   ]
 }
