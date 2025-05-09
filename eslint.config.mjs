@@ -70,6 +70,9 @@ export default [
       'complexity': ['warn', 10],
       'max-lines-per-function': ['warn', 50],
 
+      'eqeqeq': 'warn',
+      'no-else-return': 'warn',
+      'prefer-const': 'warn',
       // Add other rules here...
     },
   },
