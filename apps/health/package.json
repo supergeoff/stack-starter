@@ -11,7 +11,7 @@
           "webpackConfig": "apps/health/webpack.config.js",
           "main": "apps/health/src/main.ts",
           "tsConfig": "apps/health/tsconfig.app.json",
-          "outputPath": "apps/health/dist",
+          "outputPath": "dist/apps/health",
           "compiler": "tsc",
           "target": "node"
         },
