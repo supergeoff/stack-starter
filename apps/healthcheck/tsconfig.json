@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@ui": ["../../libs/ui/src/index.ts"],
+      "@utils": ["../../libs/utils/src/index.ts"]
     },
     "types": ["jest", "node"],
     "outDir": "dist",
@@ -33,7 +35,8 @@
     "src/**/*.jsx",
     "src/**/*.ts",
     "src/**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "../../libs/utils/src/dom/utils.ts"
   ],
   "exclude": [
     "out-tsc",
@@ -46,5 +49,6 @@
     "eslint.config.js",
     "eslint.config.cjs",
     "eslint.config.mjs"
-  ]
+  ],
+  "references": []
 }

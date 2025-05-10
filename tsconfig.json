@@ -17,6 +17,18 @@
     },
     {
       "path": "./apps/healthcheck"
+    },
+    {
+      "path": "./libs/ui"
+    },
+    {
+      "path": "./libs/utils"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
 }

@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "nx": {
-    "name": "healthcheck"
+    "name": "healthcheck",
+    "sourceRoot": "apps/healthcheck/src"
   },
   "dependencies": {
     "next": "~15.2.4",

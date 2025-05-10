@@ -1,3 +1,5 @@
+import { pathsToModuleNameMapper } from 'ts-jest';
+import tsconfig from './tsconfig.json';
 export default {
   displayName: 'healthcheck',
   preset: '../../jest.preset.js',
@@ -7,4 +9,9 @@ export default {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: 'test-output/jest/coverage',
+  moduleNameMapper: {
+    ...pathsToModuleNameMapper(tsconfig.compilerOptions.paths || {}, {
+      prefix: '<rootDir>/',
+    }),
+  },
 };

@@ -1,4 +1,5 @@
-import styles from './page.module.css';
+import { cn } from '@utils';
+import { Button } from '@ui';
 
 export default function Page() {
   /*
@@ -7,10 +8,8 @@ export default function Page() {
    * Note: The corresponding styles are in the ./index.css file.
    */
   return (
-    <div className={styles.page}>
-      <div className='text-2xl text-pink-200 font-bold bg-pink-500 p-2 font-mono'>
-        Hello
-      </div>
+    <div className={cn(['text-3xl'])}>
+      Hello <Button variant='destructive'>World</Button>
     </div>
   );
 }
