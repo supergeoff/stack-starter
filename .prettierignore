@@ -1,2 +1,5 @@
 .prettierignore
-.docusaurus/
+.docusaurus
+.next
+dist
+.nx

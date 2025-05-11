@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/health",
+  "name": "@stack-starter/health",
   "version": "0.0.1",
   "private": true,
   "nx": {

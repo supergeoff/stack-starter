@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "nx": {
+    "name": "healthcheck-e2e",
+    "projectType": "e2e",
     "implicitDependencies": [
       "healthcheck"
     ]

@@ -19,9 +19,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@ui": ["../../libs/ui/src/index.ts"],
-      "@utils": ["../../libs/utils/src/index.ts"]
+      "@/*": ["./src/*"]
     },
     "types": ["jest", "node"],
     "outDir": "dist",
@@ -50,5 +48,12 @@
     "eslint.config.cjs",
     "eslint.config.mjs"
   ],
-  "references": []
+  "references": [
+    {
+      "path": "../../libs/ui"
+    },
+    {
+      "path": "../../libs/utils"
+    }
+  ]
 }
