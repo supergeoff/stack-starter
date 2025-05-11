@@ -10,6 +10,7 @@
       "next",
       "@nx/next/typings/image.d.ts"
     ],
+    "lib": ["ES2022", "DOM"],
     "rootDir": "src",
     "jsx": "react-jsx",
     "module": "esnext",

@@ -30,7 +30,5 @@
   "devDependencies": {
     "@stack-starter/utils": "workspace:*"
   },
-  "dependencies": {
-    "@radix-ui/react-slot": "^1.2.2"
-  }
+  "dependencies": {}
 }

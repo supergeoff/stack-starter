@@ -14,11 +14,6 @@ export default defineConfig(() => ({
       tsconfigPath: path.join(__dirname, 'tsconfig.lib.json'),
     }),
   ],
-  resolve: {
-    alias: {
-      '@utils': path.resolve(__dirname, '../utils/src/index.ts'),
-    },
-  },
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
