@@ -17,7 +17,15 @@
   },
   "nx": {
     "name": "ui",
-    "sourceRoot": "libs/ui/src"
+    "sourceRoot": "libs/ui/src",
+    "targets": {
+      "test": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": ""
+        }
+      }
+    }
   },
   "devDependencies": {
     "@stack-starter/utils": "workspace:*"

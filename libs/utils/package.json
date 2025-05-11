@@ -17,7 +17,15 @@
   },
   "nx": {
     "name": "utils",
-    "sourceRoot": "libs/utils/src"
+    "sourceRoot": "libs/utils/src",
+    "targets": {
+      "test": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": ""
+        }
+      }
+    }
   },
   "dependencies": {
     "clsx": "^2.1.1",
