@@ -53,17 +53,6 @@
       }
     },
     {
-      "plugin": "@nx/next/plugin",
-      "options": {
-        "startTargetName": "start",
-        "buildTargetName": "build",
-        "devTargetName": "dev",
-        "serveStaticTargetName": "serve-static",
-        "buildDepsTargetName": "build-deps",
-        "watchDepsTargetName": "watch-deps"
-      }
-    },
-    {
       "plugin": "@nx/playwright/plugin",
       "options": {
         "targetName": "e2e"
@@ -104,26 +93,20 @@
     }
   },
   "generators": {
-    "@nx/next": {
-      "application": {
-        "style": "css",
-        "linter": "eslint"
-      }
-    },
     "@nx/react": {
       "library": {
-        "style": "css",
+        "style": "tailwind",
         "linter": "eslint",
         "unitTestRunner": "jest"
       },
       "application": {
         "babel": true,
-        "style": "css",
+        "style": "tailwind",
         "linter": "eslint",
         "bundler": "webpack"
       },
       "component": {
-        "style": "css"
+        "style": "tailwind"
       }
     }
   }

@@ -11,24 +11,6 @@
     },
     {
       "path": "./apps/health"
-    },
-    {
-      "path": "./apps/healthcheck-e2e"
-    },
-    {
-      "path": "./apps/healthcheck"
-    },
-    {
-      "path": "./libs/ui"
-    },
-    {
-      "path": "./libs/utils"
     }
-  ],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
+  ]
 }
