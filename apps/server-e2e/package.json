@@ -1,12 +1,12 @@
 {
-  "name": "@stack-starter/health-e2e",
+  "name": "@stack-starter/server-e2e",
   "version": "0.0.1",
   "private": true,
   "nx": {
-    "name": "health-e2e",
+    "name": "server-e2e",
     "projectType": "e2e",
     "implicitDependencies": [
-      "health"
+      "server"
     ],
     "targets": {
       "e2e": {
@@ -15,11 +15,11 @@
           "{projectRoot}/test-output/jest/coverage"
         ],
         "options": {
-          "jestConfig": "apps/health-e2e/jest.config.ts",
+          "jestConfig": "apps/server-e2e/jest.config.ts",
           "passWithNoTests": true
         },
         "dependsOn": [
-          "health:build"
+          "server:build"
         ]
       }
     }

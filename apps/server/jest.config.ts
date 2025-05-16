@@ -9,7 +9,7 @@ const swcJestConfig = JSON.parse(
 swcJestConfig.swcrc = false;
 
 export default {
-  displayName: 'health',
+  displayName: 'server',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {

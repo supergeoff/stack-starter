@@ -7,10 +7,10 @@
       "path": "./apps/docs"
     },
     {
-      "path": "./apps/health-e2e"
+      "path": "./apps/server-e2e"
     },
     {
-      "path": "./apps/health"
+      "path": "./apps/server"
     }
   ]
 }

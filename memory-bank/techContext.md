@@ -22,5 +22,5 @@ Pulumi for managing infrastructure, and GitHub Actions for CI/CD.
 Known Issues:
 
 - Nx bug with `@nx/js:node` executor preventing file watching for automatic
-  reloads in the 'health' application. Workaround is to use the
-  `webpack:webpack` executor for the serve target in `apps/health/package.json`.
+  reloads in the 'server' application. Workaround is to use the
+  `webpack:webpack` executor for the serve target in `apps/server/package.json`.

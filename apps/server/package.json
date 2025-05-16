@@ -1,17 +1,17 @@
 {
-  "name": "@stack-starter/health",
+  "name": "@stack-starter/server",
   "version": "0.0.1",
   "private": true,
   "nx": {
-    "name": "health",
+    "name": "server",
     "targets": {
       "build": {
         "executor": "@nx/webpack:webpack",
         "options": {
-          "webpackConfig": "apps/health/webpack.config.js",
-          "main": "apps/health/src/main.ts",
-          "tsConfig": "apps/health/tsconfig.app.json",
-          "outputPath": "dist/apps/health",
+          "webpackConfig": "apps/server/webpack.config.js",
+          "main": "apps/server/src/main.ts",
+          "tsConfig": "apps/server/tsconfig.app.json",
+          "outputPath": "dist/apps/server",
           "compiler": "tsc",
           "target": "node"
         },
@@ -30,15 +30,15 @@
           "build"
         ],
         "options": {
-          "buildTarget": "health:build",
+          "buildTarget": "server:build",
           "runBuildTargetDependencies": false
         },
         "configurations": {
           "development": {
-            "buildTarget": "health:build:development"
+            "buildTarget": "server:build:development"
           },
           "production": {
-            "buildTarget": "health:build:production"
+            "buildTarget": "server:build:production"
           }
         }
       },
