@@ -5,10 +5,7 @@
     "jsx": "react-jsx",
     "types": ["jest", "node"],
     "module": "esnext",
-    "moduleResolution": "bundler",
-    "paths": {
-      "@stack-starter/utils/*": ["../utils/src/*"]
-    }
+    "moduleResolution": "bundler"
   },
   "include": [
     "jest.config.ts",

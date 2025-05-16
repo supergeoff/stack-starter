@@ -12,11 +12,7 @@
     ],
     "rootDir": "src",
     "module": "esnext",
-    "moduleResolution": "bundler",
-    "paths": {
-      "@stack-starter/ui/*": ["../../libs/ui/src/*"],
-      "@stack-starter/utils/*": ["../../libs/utils/src/*"]
-    }
+    "moduleResolution": "bundler"
   },
   "exclude": [
     "out-tsc",

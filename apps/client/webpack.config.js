@@ -7,12 +7,6 @@ module.exports = {
   output: {
     path: join(__dirname, '../../dist/apps/client'),
   },
-  resolve: {
-    alias: {
-      '@stack-starter/utils': path.resolve(__dirname, '../../libs/utils/src'),
-      '@stack-starter/ui': path.resolve(__dirname, '../../libs/ui/src'),
-    },
-  },
   devServer: {
     port: 4200,
     historyApiFallback: {

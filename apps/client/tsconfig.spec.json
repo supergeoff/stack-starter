@@ -10,11 +10,7 @@
       "@nx/react/typings/image.d.ts"
     ],
     "module": "esnext",
-    "moduleResolution": "bundler",
-    "paths": {
-      "@stack-starter/ui/*": ["../../libs/ui/src/*"],
-      "@stack-starter/utils/*": ["../../libs/utils/src/*"]
-    }
+    "moduleResolution": "bundler"
   },
   "include": [
     "jest.config.ts",
