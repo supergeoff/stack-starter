@@ -7,16 +7,22 @@
       "path": "./apps/docs"
     },
     {
-      "path": "./apps/health-e2e"
+      "path": "./apps/server-e2e"
     },
     {
-      "path": "./apps/health"
+      "path": "./apps/server"
     },
     {
-      "path": "./apps/healthcheck-e2e"
+      "path": "./apps/client-e2e"
     },
     {
-      "path": "./apps/healthcheck"
+      "path": "./apps/client"
+    },
+    {
+      "path": "./libs/ui"
+    },
+    {
+      "path": "./libs/utils"
     }
   ]
 }

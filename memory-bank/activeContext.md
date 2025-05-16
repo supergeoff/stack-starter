@@ -5,13 +5,13 @@ patterns, learnings._
 
 Current work focus is on the initial setup of the project, including fixing the
 documentation build bug, adding basic documentation, and resolving issues with
-serving the 'health' application.
+serving the 'server' application.
 
 Recent changes include setting up the Docusaurus site using the nx plugin
 (nx-extend/docusaurus) in the apps/docs directory, fixing the documentation
 build bug in the CI, adding basic documentation, resolving a NestJS dependency
-issue in the 'health' application by changing an import type, and fixing a file
-watching issue for the 'health' application by switching the serve executor to
+issue in the 'server' application by changing an import type, and fixing a file
+watching issue for the 'server' application by switching the serve executor to
 `webpack:webpack` due to a known Nx bug.
 
 Next steps include continuing with the project setup and development of the AI
@@ -19,7 +19,7 @@ Proxy API and Chat interface.
 
 Active decisions include using the nx plugin (nx-extend/docusaurus) for
 Docusaurus setup and using the `webpack:webpack` executor for serving the
-'health' application to enable file watching.
+'server' application to enable file watching.
 
 Important patterns include following the instructions in the
 .clinerules/memory-bank.md file for updating the memory bank and identifying

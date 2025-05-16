@@ -42,10 +42,18 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/supergeoff/stack-starter/tree/main/packages/create-docusaurus/templates/shared/',
+
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -68,7 +76,7 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'mainSidebar',
+          sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Documentation',
         },

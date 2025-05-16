@@ -1,0 +1,41 @@
+{
+  "name": "@stack-starter/docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
+  },
+  "nx": {
+    "name": "docs",
+    "sourceRoot": "apps/docs/src",
+    "projectType": "application",
+    "targets": {
+      "build": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "docusaurus build --out-dir ../../dist/apps/docs",
+          "cwd": "apps/docs"
+        }
+      },
+      "serve": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "docusaurus serve",
+          "cwd": "apps/docs"
+        }
+      },
+      "test": {
+        "executor": "nx:run-script",
+        "options": {
+          "script": ""
+        }
+      }
+    }
+  }
+}

@@ -27,14 +27,15 @@
           "buildDepsName": "build-deps",
           "watchDepsName": "watch-deps"
         }
-      }
+      },
+      "exclude": ["libs/utils/*"]
     },
     {
       "plugin": "@nx/jest/plugin",
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/health-e2e/**/*"]
+      "exclude": ["apps/server-e2e/**/*"]
     },
     {
       "plugin": "@nx/webpack/plugin",
@@ -53,17 +54,6 @@
       }
     },
     {
-      "plugin": "@nx/next/plugin",
-      "options": {
-        "startTargetName": "start",
-        "buildTargetName": "build",
-        "devTargetName": "dev",
-        "serveStaticTargetName": "serve-static",
-        "buildDepsTargetName": "build-deps",
-        "watchDepsTargetName": "watch-deps"
-      }
-    },
-    {
       "plugin": "@nx/playwright/plugin",
       "options": {
         "targetName": "e2e"
@@ -79,6 +69,15 @@
         "buildDepsTargetName": "build-deps",
         "typecheckTargetName": "typecheck"
       }
+    },
+    {
+      "plugin": "@nx/js/typescript",
+      "include": ["libs/utils/*"],
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        }
+      }
     }
   ],
   "targetDefaults": {
@@ -90,10 +89,20 @@
     }
   },
   "generators": {
-    "@nx/next": {
-      "application": {
+    "@nx/react": {
+      "library": {
         "style": "css",
-        "linter": "eslint"
+        "linter": "eslint",
+        "unitTestRunner": "jest"
+      },
+      "application": {
+        "babel": true,
+        "style": "css",
+        "linter": "eslint",
+        "bundler": "webpack"
+      },
+      "component": {
+        "style": "css"
       }
     }
   }

@@ -1,0 +1,12 @@
+{
+  "name": "@stack-starter/client",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "name": "client"
+  },
+  "devDependencies": {
+    "@stack-starter/ui": "workspace:*",
+    "@stack-starter/utils": "workspace:*"
+  }
+}

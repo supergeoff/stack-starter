@@ -1,0 +1,52 @@
+{
+  "name": "@stack-starter/server",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "name": "server",
+    "targets": {
+      "build": {
+        "executor": "@nx/webpack:webpack",
+        "options": {
+          "webpackConfig": "apps/server/webpack.config.js",
+          "main": "apps/server/src/main.ts",
+          "tsConfig": "apps/server/tsconfig.app.json",
+          "outputPath": "dist/apps/server",
+          "compiler": "tsc",
+          "target": "node"
+        },
+        "configurations": {
+          "development": {
+            "args": [
+              "node-env=development"
+            ]
+          }
+        }
+      },
+      "serve": {
+        "executor": "@nx/js:node",
+        "defaultConfiguration": "development",
+        "dependsOn": [
+          "build"
+        ],
+        "options": {
+          "buildTarget": "server:build",
+          "runBuildTargetDependencies": false
+        },
+        "configurations": {
+          "development": {
+            "buildTarget": "server:build:development"
+          },
+          "production": {
+            "buildTarget": "server:build:production"
+          }
+        }
+      },
+      "test": {
+        "options": {
+          "passWithNoTests": true
+        }
+      }
+    }
+  }
+}
