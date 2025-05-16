@@ -17,5 +17,8 @@
   },
   "nx": {
     "name": "ui"
+  },
+  "devDependencies": {
+    "@stack-starter/utils": "workspace:*"
   }
 }

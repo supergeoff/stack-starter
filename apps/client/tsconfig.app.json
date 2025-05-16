@@ -14,8 +14,8 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "paths": {
-      "@/*": ["./*"],
-      "@stack-starter/ui/*": ["../../libs/ui/src/*"]
+      "@stack-starter/ui/*": ["../../libs/ui/src/*"],
+      "@stack-starter/utils/*": ["../../libs/utils/src/*"]
     }
   },
   "exclude": [
@@ -36,6 +36,9 @@
   ],
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
   "references": [
+    {
+      "path": "../../libs/utils/tsconfig.lib.json"
+    },
     {
       "path": "../../libs/ui/tsconfig.lib.json"
     }

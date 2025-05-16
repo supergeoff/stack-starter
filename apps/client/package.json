@@ -6,6 +6,7 @@
     "name": "client"
   },
   "devDependencies": {
-    "@stack-starter/ui": "workspace:*"
+    "@stack-starter/ui": "workspace:*",
+    "@stack-starter/utils": "workspace:*"
   }
 }

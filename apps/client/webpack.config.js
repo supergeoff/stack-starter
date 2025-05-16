@@ -1,10 +1,17 @@
 const { NxAppWebpackPlugin } = require('@nx/webpack/app-plugin');
 const { NxReactWebpackPlugin } = require('@nx/react/webpack-plugin');
 const { join } = require('path');
+const path = require('path');
 
 module.exports = {
   output: {
-    path: join(__dirname, 'dist'),
+    path: join(__dirname, '../../dist/apps/client'),
+  },
+  resolve: {
+    alias: {
+      '@stack-starter/utils': path.resolve(__dirname, '../../libs/utils/src'),
+      '@stack-starter/ui': path.resolve(__dirname, '../../libs/ui/src'),
+    },
   },
   devServer: {
     port: 4200,
