@@ -8,6 +8,13 @@ module.exports = {
   },
   devServer: {
     port: 4200,
+    proxy: [
+      {
+        context: ['/api'],
+        target: 'http://localhost:3000',
+        // pathRewrite: { '^/api': '' },
+      },
+    ],
     historyApiFallback: {
       index: '/index.html',
       disableDotRule: true,

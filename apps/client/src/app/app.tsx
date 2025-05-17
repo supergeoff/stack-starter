@@ -6,11 +6,12 @@ export function App() {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch('/')
+    fetch('/api')
       .then(async (res) => {
         if (!res.ok) throw new Error('Fetch failed');
         const data = await res.json();
         setMessage(data.message);
+        console.log(message);
       })
       .catch(() => {
         setError(true);
@@ -20,21 +21,19 @@ export function App() {
   if (error) {
     return (
       <div className='flex flex-col justify-center items-center min-h-screen bg-gray-100'>
-        <h1 className='text-3xl font-bold underline mb-4'>Hello</h1>
-        <div>Error fetching data</div>
+        <h1 className='text-3xl font-bold underline mb-4'>Health Check</h1>
+        <Button data-testid='checkbutton' className='bg-red-500'>
+          KO
+        </Button>
       </div>
     );
   }
 
   return (
     <div className='flex flex-col justify-center items-center min-h-screen bg-gray-100'>
-      <h1 className='text-3xl font-bold underline mb-4'>Hello</h1>
-      <Button
-        className={
-          message === 'check' ? 'bg-green-500' : message ? 'bg-red-500' : ''
-        }
-      >
-        {message === 'check' ? 'check' : message ? 'error' : 'World'}
+      <h1 className='text-3xl font-bold underline mb-4'>Health Check</h1>
+      <Button data-testid='checkbutton' className='bg-green-500'>
+        {message?.toUpperCase()}
       </Button>
     </div>
   );

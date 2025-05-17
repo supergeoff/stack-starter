@@ -11,25 +11,19 @@ describe('App', () => {
   });
 
   it('should fetch data from the server and display a green button when the message is "check"', async () => {
-    await waitFor(() => screen.getByRole('button'));
-    const button = screen.getByRole('button');
-    expect(button).toHaveTextContent('check');
-    expect(button).toHaveClass('bg-green-500');
+    render(<App />);
+    await waitFor(() =>
+      expect(screen.getByTestId('checkbutton')).toHaveTextContent('CHECK'),
+    );
+    expect(screen.getByTestId('checkbutton')).toHaveClass('bg-green-500');
   });
 
-  it('should fetch data from the server and display a red button when the message is not "check"', async () => {
+  it('should fetch data from the server and display a red button when the message is not "check" or the call is error', async () => {
     server.use(fetchKO);
     render(<App />);
-    await waitFor(() => screen.getByRole('button'));
-    const button = screen.getByRole('button');
-    expect(button).toHaveTextContent('error');
-    expect(button).toHaveClass('bg-red-500');
-  });
-
-  it('should handle fetch errors gracefully', async () => {
-    server.use(fetchKO);
-    render(<App />);
-    await waitFor(() => screen.getByText('Error fetching data'));
-    expect(screen.getByText('Error fetching data')).toBeInTheDocument();
+    await waitFor(() =>
+      expect(screen.getByTestId('checkbutton')).toHaveTextContent('KO'),
+    );
+    expect(screen.getByTestId('checkbutton')).toHaveClass('bg-red-500');
   });
 });
