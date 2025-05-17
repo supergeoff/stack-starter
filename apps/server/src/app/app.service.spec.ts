@@ -13,8 +13,8 @@ describe('AppService', () => {
   });
 
   describe('getData', () => {
-    it('should return "Check"', () => {
-      expect(service.getData()).toEqual({ message: 'Check' });
+    it('should return "check"', () => {
+      expect(service.getData()).toEqual({ message: 'check' });
     });
   });
 });

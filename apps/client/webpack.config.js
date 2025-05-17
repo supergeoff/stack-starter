@@ -1,7 +1,6 @@
 const { NxAppWebpackPlugin } = require('@nx/webpack/app-plugin');
 const { NxReactWebpackPlugin } = require('@nx/react/webpack-plugin');
 const { join } = require('path');
-const path = require('path');
 
 module.exports = {
   output: {
@@ -9,6 +8,13 @@ module.exports = {
   },
   devServer: {
     port: 4200,
+    proxy: [
+      {
+        context: ['/api'],
+        target: 'http://localhost:3000',
+        // pathRewrite: { '^/api': '' },
+      },
+    ],
     historyApiFallback: {
       index: '/index.html',
       disableDotRule: true,
