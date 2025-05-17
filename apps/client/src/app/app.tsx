@@ -11,7 +11,6 @@ export function App() {
         if (!res.ok) throw new Error('Fetch failed');
         const data = await res.json();
         setMessage(data.message);
-        console.log(message);
       })
       .catch(() => {
         setError(true);
