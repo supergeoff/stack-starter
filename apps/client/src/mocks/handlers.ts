@@ -1,16 +1,16 @@
-import { http, HttpResponse } from 'msw';
+import { http, type HttpHandler, HttpResponse } from 'msw';
 
-export const fetchSuccess = http.get('/api', () => {
+export const fetchSuccess: HttpHandler = http.get('/api', () => {
   return HttpResponse.json({
     message: 'check',
   });
 });
 
-export const fetchKO = http.get('/api', () => {
+export const fetchKO: HttpHandler = http.get('/api', () => {
   return new HttpResponse(null, {
     status: 404,
     statusText: 'out of check',
   });
 });
 
-export const handlers = [fetchSuccess];
+export const handlers: HttpHandler[] = [fetchSuccess];

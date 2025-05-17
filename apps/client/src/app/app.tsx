@@ -1,15 +1,19 @@
 import { Button } from '@stack-starter/ui/components/button';
 import { useEffect, useState } from 'react';
 
-export function App() {
+type ApiResponse = {
+  message: string;
+};
+
+export function App(): React.ReactElement {
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState(false);
 
   useEffect(() => {
     fetch('/api')
-      .then(async (res) => {
+      .then(async (res: Response) => {
         if (!res.ok) throw new Error('Fetch failed');
-        const data = await res.json();
+        const data: ApiResponse = await res.json();
         setMessage(data.message);
       })
       .catch(() => {

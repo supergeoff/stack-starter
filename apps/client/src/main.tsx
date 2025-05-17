@@ -4,7 +4,7 @@ import '@stack-starter/ui/styles/globals.css';
 
 import App from './app/app';
 
-const root = ReactDOM.createRoot(
+const root: ReactDOM.Root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(

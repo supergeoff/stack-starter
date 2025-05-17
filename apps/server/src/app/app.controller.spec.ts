@@ -15,7 +15,8 @@ describe('AppController', () => {
 
   describe('getData', () => {
     it('should return "check"', () => {
-      const appController = app.get<AppController>(AppController);
+      const appController: AppController =
+        app.get<AppController>(AppController);
       expect(appController.getData()).toEqual({ message: 'check' });
     });
   });

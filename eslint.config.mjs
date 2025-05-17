@@ -13,6 +13,8 @@ export default [
       '**/vitest.config.*.timestamp*',
       '**/out-tsc',
       '**/test-output',
+      '**/*.config.ts',
+      '**/*.config.js',
     ],
   },
   {
@@ -50,6 +52,20 @@ export default [
       '@typescript-eslint/consistent-type-imports': 'warn',
       '@typescript-eslint/no-unused-vars': 'error', // Upgrade from warn
       '@typescript-eslint/no-explicit-any': 'error', // Upgrade from warn
+
+      '@typescript-eslint/no-inferrable-types': 'off',
+      '@typescript-eslint/explicit-function-return-type': 'error',
+      '@typescript-eslint/explicit-module-boundary-types': 'error',
+      '@typescript-eslint/no-explicit-any': 'error',
+      '@typescript-eslint/typedef': [
+        'error',
+        {
+          arrowParameter: true,
+          parameter: true,
+          propertyDeclaration: true,
+          variableDeclaration: true,
+        },
+      ],
 
       // --- Code Style & Consistency ---
       '@typescript-eslint/naming-convention': [
