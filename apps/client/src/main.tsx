@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import '@stack-starter/ui/styles/globals.css';
+import '@ts-starter/ui/styles/globals.css';
 
 import App from './app/app';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@stack-starter/server",
+  "name": "@ts-starter/server",
   "version": "0.0.1",
   "private": true,
   "nx": {

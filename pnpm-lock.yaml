@@ -324,7 +324,7 @@ importers:
 
   apps/client:
     devDependencies:
-      '@stack-starter/ui':
+      '@ts-starter/ui':
         specifier: workspace:*
         version: link:../../libs/ui
 
@@ -338,7 +338,7 @@ importers:
 
   libs/ui:
     devDependencies:
-      '@stack-starter/utils':
+      '@ts-starter/utils':
         specifier: workspace:*
         version: link:../utils
 

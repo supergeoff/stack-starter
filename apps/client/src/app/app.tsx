@@ -1,4 +1,4 @@
-import { Button } from '@stack-starter/ui/components/button';
+import { Button } from '@ts-starter/ui/components/button';
 import { useEffect, useState } from 'react';
 
 type ApiResponse = {

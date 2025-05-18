@@ -11,12 +11,12 @@ const config: Config = {
   url: 'https://supergeoff.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/stack-starter/',
+  baseUrl: '/ts-starter/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'supergeoff', // Usually your GitHub org/user name.
-  projectName: 'stack-starter', // Usually your repo name.
+  projectName: 'ts-starter', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -38,7 +38,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/supergeoff/stack-starter/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/supergeoff/ts-starter/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -49,7 +49,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/supergeoff/stack-starter/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/supergeoff/ts-starter/tree/main/packages/create-docusaurus/templates/shared/',
 
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -81,7 +81,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/supergeoff/stack-starter',
+          href: 'https://github.com/supergeoff/ts-starter',
           label: 'GitHub',
           position: 'right',
         },
@@ -104,7 +104,7 @@ const config: Config = {
           items: [
             {
               label: 'Discussions',
-              href: 'https://github.com/supergeoff/stack-starter/discussions',
+              href: 'https://github.com/supergeoff/ts-starter/discussions',
             },
           ],
         },
@@ -113,7 +113,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/supergeoff/stack-starter',
+              href: 'https://github.com/supergeoff/ts-starter',
             },
           ],
         },

@@ -11,10 +11,10 @@
   },
   "iconLibrary": "lucide",
   "aliases": {
-    "components": "@stack-starter/ui/components",
-    "utils": "@stack-starter/ui/lib/utils",
-    "hooks": "@stack-starter/ui/hooks",
-    "lib": "@stack-starter/ui/lib",
-    "ui": "@stack-starter/ui/components"
+    "components": "@ts-starter/ui/components",
+    "utils": "@ts-starter/ui/lib/utils",
+    "hooks": "@ts-starter/ui/hooks",
+    "lib": "@ts-starter/ui/lib",
+    "ui": "@ts-starter/ui/components"
   }
 }

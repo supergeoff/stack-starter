@@ -1,5 +1,5 @@
 {
-  "name": "@stack-starter/ui",
+  "name": "@ts-starter/ui",
   "version": "0.0.1",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -19,6 +19,6 @@
     "name": "ui"
   },
   "devDependencies": {
-    "@stack-starter/utils": "workspace:*"
+    "@ts-starter/utils": "workspace:*"
   }
 }
